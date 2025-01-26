@@ -13,6 +13,25 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/9bb6d883bd.js" crossorigin="anonymous"></script>
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- fonts -->
+
+    <style>
+        .font-pop {
+            font-family: "Poppins", serif;
+        }
+
+        .font-eb {
+            font-family: "EB Garamond", serif;
+        }
+    </style>
+
     <!-- custom color -->
     <script>
         tailwind.config = {
@@ -23,6 +42,7 @@
                         'btn-color': '#B68C5A',
                         'text-t': '#414040',
                         'text-d': '#707070',
+                        'bg-add': '#F3F3F3',
                     }
                 }
             }
@@ -31,7 +51,7 @@
 
 </head>
 
-<body class="container mx-auto">
+<body class="container mx-auto font-[font-pop]">
 
     <header>
         <!-- nav -->
@@ -62,7 +82,8 @@
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-neutral-content text-center">
                 <div class="max-w-2xl">
-                    <h1 class="lg:mt-28 mb-6 text-6xl font-bold">We Provide Effective Legal Solutions</h1>
+                    <h1 class="lg:mt-28 mb-6 text-6xl font-bold font-[font-pop]">We Provide Effective Legal Solutions
+                    </h1>
                     <p class="mb-8">
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour.
@@ -83,7 +104,7 @@
         <section class="mt-28">
             <!-- text area -->
             <div class="text-center">
-                <h3 class="text-4xl text-text-t mb-6">The Legal Practice Area</h3>
+                <h3 class="text-4xl text-text-t mb-6 font-[font-pop] ">The Legal Practice Area</h3>
                 <p class="text-text-d mb-16">There are many variations of passages of Lorem Ipsum available, but the
                     majority have suffered alteration
                     in some form, by injected humour.</p>
@@ -189,10 +210,212 @@
                 </div>
             </div>
         </section>
+
+        <!-- clint review -->
+        <section class="mt-28">
+            <!-- text area -->
+            <div class="text-center">
+                <img src="" alt="">
+                <h3 class="text-4xl text-text-t mb-6 font-[font-pop]">What Our Client Say</h3>
+                <p class="text-text-d mb-16">There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+
+            <!-- carousel -->
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full hero-overlay">
+                    <img src="images/banner.png" class="w-full opacity-80 " />
+                    <div
+                        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between items-center">
+
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+
+                        <div class="max-w-2xl text-white text-center">
+                            <h1 class="lg:mt-28  text-xl font-bold font-[font-pop]">Awlad Hossain</h1>
+                            <p class="mb-6">UIX Designer</p>
+                            <p class=" lg:mb-28">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                                the more obscure Latin words, consectetur.
+                            </p>
+                        </div>
+
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="mt-28">
+            <!-- text -->
+            <div class="text-center">
+                <img src="" alt="">
+                <h3 class="text-4xl text-text-t mb-6 font-[font-pop]">Frequently Asked Any Questions</h3>
+                <p class="text-text-d mb-16">There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+
+            <!-- accordion and image  -->
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- accordion -->
+                <div class=" flex-1 flex flex-col gap-10">
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image -->
+                <div class="flex-1">
+                    <img src="images/faq.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- card and contact section -->
+        <section class="mt-28">
+
+            <div class=" flex items-center gap-7">
+                <!-- card -->
+                <div class=" flex-1 grid grid-cols-2">
+                    <!-- card1 -->
+                    <div class="card rounded-none bg-bg-add border-b-2 border-r-2">
+                        <figure class="px-10 pt-10">
+                            <img src="images/location.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Address</h2>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                    </div>
+                    <!-- card2 -->
+                    <div class="card rounded-none bg-bg-add border-b-2">
+                        <figure class="px-10 pt-10">
+                            <img src="images/call.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Call Us</h2>
+                            <p>+88 01750 00 00 00 <br>
+                                +88 01750 00 00 00</p>
+                        </div>
+                    </div>
+                    <!-- card3 -->
+                    <div class="card rounded-none bg-bg-add border-r-2">
+                        <figure class="px-10 pt-10">
+                            <img src="images/email.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Email Us</h2>
+                            <p>info@gmail.com <br>
+                                info@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- card4 -->
+                    <div class="card rounded-none bg-bg-add">
+                        <figure class="px-10 pt-10">
+                            <img src="images/time.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Working Hours</h2>
+                            <p>Mon-Fri: 9AM to 5PM <br>
+                                Sunday: 9AM to 1 PM</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- contact -->
+                <div class=" flex-1 flex flex-col gap-8">
+
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Your Name" />
+                    </label>
+
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Your Email" />
+                    </label>
+
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Subject" />
+                    </label>
+
+
+                    <textarea class="textarea textarea-bordered flex items-center gap-2"
+                        placeholder="Your Message"></textarea>
+
+                    <a class="btn bg-btn-color text-white">Send Message</a>
+
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
-
+    <!-- footer section -->
+    <footer class="mt-28 footer bg-[#111111] text-base-content p-10 text-white">
+        <nav>
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+            <h6 class="footer-title">Newsletter</h6>
+            <fieldset class="form-control w-80">
+                <label class="label">
+                    <span class="label-text text-white">Enter your email address</span>
+                </label>
+                <div class="join">
+                    <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+                    <button class="btn bg-btn-color join-item">
+                        <i class="text-white fa-regular fa-paper-plane"></i>
+                    </button>
+                </div>
+            </fieldset>
+        </form>
     </footer>
 
 
